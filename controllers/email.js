@@ -1,6 +1,8 @@
 const User = require('../models/user');
 const Order = require('../models/order');
 const transporter = require('../conf/nodemailer')
+const env = require('../env')
+
 module.exports = {
   send: async (req, res, next) => {
     try {
